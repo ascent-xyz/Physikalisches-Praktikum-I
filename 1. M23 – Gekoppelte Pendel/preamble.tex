@@ -1,0 +1,63 @@
+\usepackage[default]{fontsetup}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel=true,german=quotes]{csquotes}
+
+\usepackage[onehalfspacing]{setspace}
+
+% Mathepakete (unicode-math ersetzt amssymb, amsfonts etc.)
+\usepackage{amsmath,amsthm}
+\usepackage{microtype}
+%\usepackage[no-script, no-inner]{innerscript}
+\usepackage[no-script, no-inner, no-close]{innerscript}
+\usepackage{mathtools}
+\usepackage{mleftright}
+\usepackage{fixdif,derivative}
+\usepackage{physics2}
+\usephysicsmodule{ab.legacy}
+
+\usepackage{unicode-math}
+\setmathfont{NewCMMath-Book}
+\setmathfont{NewCMMath-Book}[range=cal, StylisticSet=1]
+\setmathfont{NewCMMath-Book}[range=scr]
+
+\usepackage{siunitx}
+\sisetup{detect-weight=true, detect-family=true,locale=DE,range-phrase={\,bis\,},list-final-separator ={\,\linebreak[0] \text{und}\,},separate-uncertainty=true,per-mode = symbol-or-fraction}
+%\SI[per-mode = fraction]{1}{\meter\per\second} erzwingt auch im Fließtext die Bruchdarstellung.
+\DeclareSIUnit\curie{Ci}%ZusÃ¤tzliche Einheit definieren
+
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tabularx, booktabs, multirow}
+\usepackage{xurl}
+\usepackage{float}
+\usepackage[final]{pdfpages}
+\usepackage{framed, color} %Framed: Paket, mittels dessen ein Rahmen um einen Bereich definiert werden kann. Color: Lässt Farbdarstellung in Schrift, Hintergrund etc. zu
+\usepackage{scrlayer-scrpage} %Header für die KOMA-script-Klasse
+
+\usepackage[square,numbers]{natbib}
+\usepackage{subfigure} %Mehrere Bilder in einer Figure-Umgebung
+
+\usepackage[bookmarks,colorlinks=true]{hyperref}
+\hypersetup{
+	colorlinks,
+	linktocpage,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\numberwithin{equation}{section} % Die Nummerierung von Gleichungen bekommt die jeweilige Section-Nummer als PrÃ¤fix
+
+%\setlength{\parindent}{0 mm} %EinrÃ¼cktiefe von neuen AbsÃ¤tzen
+%\setlength{\parskip}{2 mm} %Abstand von AbsÃ¤tzen
+
+\pagestyle{scrheadings}%Kopf und FuÃŸzeilen
+\ohead{\textbf{\GRUPPENNR\ - \VERSUCHSNR}} %Header oben links auf linker Seite (ungerade Seitenzahl) und oben rechts auf rechter Seite (gerade Seitenzahl), beinhaltet gruppennummer und VersuchskÃ¼rzel. Im Fall eine einseitigen Dokuments: Header oben rechts
+\ihead{\VerfasserEINS\;\&\;\VerfasserZWEI} %Header oben rechts auf linker Seite und oben links auf rechter Seite. Beinhaltet die Namen der Verfasser. Im Fall eine einseitigen Dokuments: Header oben links!
+\ofoot{\thepage} %Footer unten links auf linker und unten rechts auf rechter Seite, enthÃ¤lt die jeweilige Seitenzahl. Im Fall eines einseitigen Elements: Footer unten rechts!
+\cfoot{\empty} %Mittig unten im Footer soll nichts eingetragen werden
+\ifoot{\empty} %Footer unten rechts auf linker und unten links auf rechter Seite. Hier ebenfalls leer.
