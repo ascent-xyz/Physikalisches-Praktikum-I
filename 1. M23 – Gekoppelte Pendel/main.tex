@@ -56,8 +56,53 @@ BCOR=1cm, %Platz zum Lochen
 
 \section{Grundlagen}
 
+Eine Schwingung ist in der Physik eine Bewegung, die sich periodisch wiederholt. Sie wird wesentlich durch zwei Größen charakterisiert: Die Amplitude, welche die maximale Auslenkung aus der Ruhelage ist und die Frequenz, welche der Kehrwert der Schwingungsdauer ist. Die Schwingungsdauer ist die Zeit, die das System benötigt, um wieder in den selben Zustand zu kommen. Die harmonische Schwingung ist eine spezielle Schwingung, bei der die Rückstellkraft proportional zur Auslenkung ist, wodurch die Schwingung sinusförmig abläuft.
 
+Ein klassisches schwingungsfähiges  System ist ein Pendel. Unterschieden wird zwischen mathematischen und physikalischen Pendeln, wobei das mathematische eine Punktmasse betrachtet, die an einer masselosen Aufhängung schwingt. Beim Physikalischen werden hingegen alle Massen und ihre räumlichen Ausdehnungen durch das Trägheitsmoment berücksichtigt.
 
+Werden zwei Pendel gekoppelt, können diese wechselwirken und beeinflussen dann jeweils ihre Bewegungsgleichungen, die als ein paar gekoppelter Differenzialgleichungen vorliegen:
+\begin{align}
+	J\ddot{\psi_1} &= -Mg\ls\psi_1 - D_{\text{F}}\lh^2(\psi_1-\psi_2)\\
+	J\ddot{\psi_2} &= -Mg\ls\psi_2 - D_{\text{F}}\lh^2(\psi_2-\psi_1)
+\end{align}
+Sie setzen sich zusammen aus den rückstellenden Drehmomenten der Gewichtskraft und der Federkraft. Die Schwerpunktmasse \(M\) ergibt sich aus der Summe über alle Teilmassen \(m, m_{\text{H}}, m_{\text{St}}\) und für ihren Abstand zur Drehachse gilt \(\ell_{\text{S}} = \frac{Lm+l_Hm_H+0,5L_{St}m_{St}}{M}\).
+
+Mit den Kreisfrequenzen \(\omega_0^2=\frac{Mgl_s}{J}\)  und  \(\Omega^2=\frac{D_Fl_H^2}{J}\) ergibt sich:
+\begin{align}
+	\ddot{\psi_1}+\omega_0^2\psi_1+\Omega^2(\psi_1-\psi_2) &= 0\\
+	\ddot{\psi_2}+\omega_0^2\psi_2-\Omega^2(\psi_2-\psi_1) &= 0
+\end{align}
+
+Das System aus zwei gekoppelten Pendeln kann drei Schwingungsformen einnehmen: gleichsinnige Schwingung, gegensinnige Schwingung und Schwebung. Die ersten beiden sind dabei die Fundamentalschwingungen des Systems.
+
+Bei der gleichsinnigen Schwingung werden beide Pendel anfangs mit gleichem Winkel \(\psi_1 =\psi_2=\psi_a \ \dot\psi_1=\dot\psi_2=0\) ausgelenkt, so dass sie in Phase schwingen. Dadurch gilt:
+\begin{equation}
+	\psi_1 =\psi_2=\psi_a \cos(\omega_0t)
+\end{equation}
+
+Bei der gegensinnigen Schwingung werden die Pendel mit gegensätzlichen Winkeln \(-\psi_1=\psi_2=\psi_a \ \dot\psi_1=\dot\psi_2=0\) ausgelenkt. Dadurch gilt
+\begin{align}
+	\psi_1(t) &=\psi_a \cos\sqrt{\omega_0^2+2\Omega^2}\cdot t\\
+	-\psi_2(t) &=\psi_a \cos\sqrt{\omega_0^2+2\Omega^2}\cdot t \,.
+\end{align}
+
+Die Schwebung resultiert aus zwei sich überlagernden Schwingungen, mit unterschiedlichen Frequenzen. Dies kann erreicht werden, indem Pendel 1 ausgelenkt wird, während 2 in Ruhe ist: \(\psi_1=\psi_a \ \psi_2=0 \ \dot\psi_1=\dot\psi_2=0\). Nach dem Beginn der Schwingung nimmt die Amplitude von Pendel 1 ab, während die von 2 zunimmt. Dies geschieht, bis 1 stillsteht, dann liegt die vollständige Energie in der Schwingung von Pendel 2 vor. Ab da transferiert Pendel 2 seine Energie wieder an 1 ab. Das Resultat sind \qty{90}{\degree} zueinander verschobene Schwingungen der Pendel mit an und abnehmenden Amplituden. Damit ergibt sich:
+\begin{align}
+	\psi_1(t) &= \psi_a\cos\frac{\sqrt{\omega_0^2+2\Omega^2}-\omega_0}{2}t\cdot\cos\frac{\sqrt{\omega_0^2+2\Omega^2}+\omega_0}{2}t\\
+	\psi_2(t) &= \psi_a\sin\frac{\sqrt{\omega_0^2+2\Omega^2}-\omega_0}{2}t\cdot\sin\frac{\sqrt{\omega_0^2+2\Omega^2}+\omega_0}{2}t
+\end{align}
+
+Die Schwingungsdauern lassen sich mit den Kreisfrequenzen $ \omega_I=\frac{\sqrt{\omega_0^2+2\Omega^2}-\omega_0}{2}=\frac{\omega_{\text{geg}}-\omega_{\text{gl}}}{2}$ und $\omega_{II}=\frac{\sqrt{\omega_0^2+2\Omega^2}+\omega_0}{2}=\frac{\omega_{\text{geg}}+\omega_{\text{gl}}}{2}$ berechnen: $T_I=\frac{2\pi}{\omega_I} \  T_{II}=\frac{2\pi}{\omega_{II}}$.
+
+Die Stärke der Kopplung kann durch den Kopplungsgrad beschrieben werden. Dieser setzt die durch die Kopplung übertragene Energie ins Verhältnis zur Gesamtenergie. Er kann durch eine der drei Formeln berechnet werden:
+
+\begin{align}
+	K&=\frac{D_Fl^2}{mgL+D_Fl^2}=\frac{\Omega^2}{\omega_0^2+\Omega^2}\\
+	K&=\frac{\omega_{\text{geg}}^2-\omega_{\text{gl}}^2}{\omega_{\text{geg}}^2+\omega_{\text{gl}}^2}=\frac{T_{gl}^2-T_{geg}^2}{T_{gl}^2+T_{geg}^2}\\
+	K&=\frac{2\omega_I-\omega_{II}}{\omega_I^2+\omega_{II}^2}=4\cdot\frac{T_ST_{II}}{4T_S^2+T_{II}^2}
+\end{align}
+
+Das Trägheitsmoment J des Pendels kann mit $J=\frac{1}{3}m_{St}L_{St}^2+m_Hl_H^2+mL^2$ berechnet werden, da die Ausdehnung in die Breite der Massen und des Stabes gegenüber der Länge vernachlässigbar sind und so von Punktmassen ausgegangen werden kann. $m_{St}$,$L_{St}$ sind die Masse und Länge des Stabes, $m_H$,$l_H$ sind die Masse und der Abstand zur Drehachse des Hakens und $m$, $L$ sind die Masse des Pendelgewichts und dessen Abstand zur Rotationsachse.
 
 \section[Messprinzip]{Messprinzip mit Skizze und Versuchsablauf}
 
