@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{scrartcl}
+
+\usepackage[lmargin=2.5cm, rmargin=2.5cm, top=100pt, bottom=100pt]{geometry}
+%\geometry{bottom=100pt} \geometry{top=100pt} %Definiert den oberen und unteren Rand
+\usepackage[onehalfspacing]{setspace} %Bestimmt den Zeilenabstand
+
+\usepackage[default]{fontsetup}
+%\usepackage{fontspec} %mit lmodern
+%\setmainfont{Latin Modern Roman}
+
+\usepackage[ngerman]{babel}
+\usepackage[babel=true,german=quotes]{csquotes}
+
+\usepackage{microtype}
+
+\usepackage{mleftright}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{mleftright}
+\usepackage{fixdif,derivative}
+\usepackage{physics2}
+\usephysicsmodule{ab.legacy}
+
+\usepackage{unicode-math}
+\setmathfont[StylisticSet=1]{NewCMMath-Book}
+%\setmathfont{Latin Modern Math}
+%\setmathfont{Latin Modern Math}[range=\hbar]
+
+\usepackage{siunitx} %Einheiten
+\sisetup{locale = DE}
+
+\usepackage{tabularx, booktabs, multirow} %Für bessere Tabellen und einfachen Excel to LaTeX import
+\usepackage{array} %Bessere Formatierung / Umgebung für mehrzeilige Formeln
+\usepackage{float} %Großes H zum fixieren von Abbildungen/Tabellen
+\usepackage{graphicx}
+\usepackage{epstopdf} %Um .eps-Bilder in LaTeX verwenden zu können
+
+%\usepackage{svg}
+%\svgsetup{inkscapelatex=true}
+
+%\usepackage{upgreek} %Für nicht kursive griechische Buchstaben
+
+\usepackage{chemformula}% mächtiges Chemiepaket(Rkt. Gl., Oxidationszahlen etc.)
+\usepackage{chemgreek}% für chemformula
+%\usepackage{chemmacros}% für chemformula
+\usepackage{tikz} %Vektorgrafziken im LaTeX-eigenen Format, z. B. zum Export aus QtiPlot
+
+\usepackage{xurl}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+	citecolor=blue,
+	pdftitle=Versuch1,
+	pdfauthor=JM-VS
+}
+
+\usepackage[font=small]{caption}
+
+\usepackage[backend=biber, style=chem-angew]{biblatex} %Literaturverzeichnis
+\addbibresource{lit.bib} %Literaturverzeichnis, zu finden als Datei lit.bib im selben Ordner wie diese .tex-Datei
+\captionsetup{format=plain}
+
+%\parindent0pt %Kein Einzug am Anfang von Absätzen
+%\sloppy %Besserer Blocksatz, naja..
+
+%\newcommand{\celsius}{^{\circ}\mathrm{C}} %Ermöglicht es, \celsius für die Einheit °C zu verwenden UNICODE!!!
+%\renewcaptionname{ngerman}{\figurename}{Abb.} %Umbenennung Abbildungen, optional
+%\renewcaptionname{ngerman}{\tablename}{Tab.} %Umbenennung Tabellen, optional
+
+%\input{C:/Users/Julian/Documents/TeX/macros.tex}
+\usepackage{mleftright}
+\newcommand{\Le}{\mleft}
+\newcommand{\Ri}{\mright}

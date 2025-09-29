@@ -8,7 +8,6 @@
 % Mathepakete (unicode-math ersetzt amssymb, amsfonts etc.)
 \usepackage{amsmath,amsthm}
 \usepackage{microtype}
-%\usepackage[no-script, no-inner]{innerscript}
 \usepackage[no-script, no-inner, no-close]{innerscript}
 \usepackage{mathtools}
 \usepackage{mleftright}
@@ -40,6 +39,9 @@
 \usepackage[square,numbers]{natbib}
 \usepackage{subfigure} %Mehrere Bilder in einer Figure-Umgebung
 
+%\usepackage[backend=biber, style=chem-angew]{biblatex} %Literaturverzeichnis
+%\addbibresource{lit.bib} %Literaturverzeichnis, zu finden als Datei lit.bib im selben Ordner wie diese .tex-Datei
+
 \usepackage[bookmarks,colorlinks=true]{hyperref}
 \hypersetup{
 	colorlinks,
@@ -49,11 +51,10 @@
 	linkcolor=black,
 	urlcolor=black
 }
-
 \numberwithin{equation}{section} % Die Nummerierung von Gleichungen bekommt die jeweilige Section-Nummer als PrÃ¤fix
 
-%\setlength{\parindent}{0 mm} %EinrÃ¼cktiefe von neuen AbsÃ¤tzen
-%\setlength{\parskip}{2 mm} %Abstand von AbsÃ¤tzen
+\setlength{\parindent}{0 mm} %Einrücktiefe von neuen AbsÃ¤tzen
+\setlength{\parskip}{6pt} %Abstand von AbsÃ¤tzen
 
 \pagestyle{scrheadings}%Kopf und FuÃŸzeilen
 \ohead{\textbf{\GRUPPENNR\ - \VERSUCHSNR}} %Header oben links auf linker Seite (ungerade Seitenzahl) und oben rechts auf rechter Seite (gerade Seitenzahl), beinhaltet gruppennummer und VersuchskÃ¼rzel. Im Fall eine einseitigen Dokuments: Header oben rechts
