@@ -8,7 +8,7 @@
 % Mathepakete (unicode-math ersetzt amssymb, amsfonts etc.)
 \usepackage{amsmath,amsthm}
 \usepackage{microtype}
-\usepackage[no-script, no-inner, no-close]{innerscript}
+\usepackage[no-script, no-scriptscript, no-inner, no-close]{innerscript}
 \usepackage{mathtools}
 \usepackage{mleftright}
 \usepackage{fixdif,derivative}
@@ -62,3 +62,14 @@
 \ofoot{\thepage} %Footer unten links auf linker und unten rechts auf rechter Seite, enthÃ¤lt die jeweilige Seitenzahl. Im Fall eines einseitigen Elements: Footer unten rechts!
 \cfoot{\empty} %Mittig unten im Footer soll nichts eingetragen werden
 \ifoot{\empty} %Footer unten rechts auf linker und unten links auf rechter Seite. Hier ebenfalls leer.
+
+\newcommand{\Le}{\mleft}
+\newcommand{\Ri}{\mright}
+
+\newcommand{\tz}{T_{\text{II}}}
+\newcommand{\ts}{T_{\text{S}}}
+\newcommand{\tgl}{T_{\text{gl}}}
+\newcommand{\tgeg}{T_{\text{geg}}}
+\newcommand{\omz}{\omega_{\text{II}}}
+\newcommand{\omgl}{\omega_{\text{gl}}}
+\newcommand{\omgeg}{\omega_{\text{geg}}}

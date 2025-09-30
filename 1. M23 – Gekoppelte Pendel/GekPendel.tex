@@ -54,7 +54,9 @@ oneside, %Einseitiger Druck
 
 In diesem Versuch soll das Verhalten, insbesondere die Schwingungsdauer, gekoppelter Pendel untersucht werden. Dazu werden mit einer CCD-Kamera die Auslenkungen beider Pendel über die Zeit gemessen und anschließend die Periodendauern aus dem Messprogramm extrahiert.
 
-Zudem wird das Trägheitsmoment berechnet und damit die verschiedenen Kopplungsgrade bestimmt.
+Zudem wird das Trägheitsmoment berechnet anhand der Dimensionen der Pendel um damit die theoretischen Eigenfrequenzene zu bestimmen und dann mit den experimentell festgestellten zu vergleichen.
+
+Die Kopplungsgrade des Systems werden auf zwei verschiedene Weisen bestimmt.
 
 \section{Grundlagen}
 
@@ -374,7 +376,7 @@ Für die entsprechenden Kopplungsgrade ergeben sich die folgende Periodendauern.
 \end{table}
 
 \begin{table}[H]
-		\caption{Periodendauern für \(\lh = \qty{70}{\centi\meter}\) \label{tbl:res70}. \(\tilde{T}_{\text{S}}\) sind die Schwebungsdauern die gemessen wurden, als die Schwebung durch ungleiche Auslenkungen erzeugt wurde.}
+		\caption{Periodendauern für \(\lh = \qty{70}{\centi\meter}\) \label{tbl:res70}. \(T_{\text{S},≠}\) sind die Schwebungsdauern die gemessen wurden, als die Schwebung durch ungleiche Auslenkungen erzeugt wurde.}
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}@{\hspace{5pt}}lrrr@{\hspace{5pt}}}
 		\toprule
 		Periodendauer & Pendel 1 & Pendel 2 & Mittel\\
@@ -383,37 +385,40 @@ Für die entsprechenden Kopplungsgrade ergeben sich die folgende Periodendauern.
 		\(T_{\text{geg}}\) & \qty{1,6}{\second} & \qty{1,6}{\second} & \qty{1,6}{\second}\\
 		\(T_{\text{II}}\) & \qty{1,6}{\second} & \qty{1,6}{\second} & \qty{1,6}{\second}\\
 		\(T_{\text{S}}\) & \qty{19,5}{\second} & \qty{19,8}{\second} & \qty{19,6}{\second} \\
-		\(\tilde{T}_{\text{S}}\) & \qty{19,9}{\second} & \qty{20,3}{\second} & \qty{20,1}{\second}\\
+		\(T_{\text{S},≠}\) & \qty{19,9}{\second} & \qty{20,3}{\second} & \qty{20,1}{\second}\\
 		\bottomrule
 	\end{tabular*}
 \end{table}
 
-
+Die folgende Abbildung zeigt eine gleichsinnige Fundamentalschwingung über einige Perioden. Wie zu sehen ist, wird sie dadurch charakterisiert, dass es annähernd keine Phasenverschiebung gibt und die Amplituden gleich sind.
 \begin{figure}[H]
 	\centering{\includegraphics[width=0.7\textwidth]{gleichsinnige_FUNDAMENTALSCHWINGUNG_70cm.pdf}}
-	\caption{\(x(t)\)-Diagramm der gleichsinnigen Fundamentalschwingung bei \(\lh = \qty{70}{\centi\meter}\).}
+	\caption{\(s(t)\)-Diagramm der gleichsinnigen Fundamentalschwingung bei \(\lh = \qty{70}{\centi\meter}\).}
 	\label{fig:gl70}
 \end{figure}
 
+Die folgende Abbildung zeigt eine gegensinnige Fundamentalschwingung über einige Perioden. Sie zeichnet sich durch eine Phasenverschiebung von \(\frac{\pi}{2}\) aus. Ihre Amplituden sind ebenfalls gleich.
 \begin{figure}[H]
 	\centering{\includegraphics[width=0.7\textwidth]{gegensinnige_FUNDAMENTALSCHWINGUNG_70cm.pdf}}
-	\caption{\(x(t)\)-Diagramm der gegensinnigen Fundamentalschwingung bei \(\lh = \qty{70}{\centi\meter}\).}
+	\caption{\(s(t)\)-Diagramm der gegensinnigen Fundamentalschwingung bei \(\lh = \qty{70}{\centi\meter}\).}
 	\label{fig:geg70}
 \end{figure}
 
+Wird der Schwebungsfall durch auslenken eines Pendels herbigeführt entsteht folgendes Schwingungsmuster, wobei die Schwebungsdauern gut sichtbar werden.
 \begin{figure}[H]
 	\centering{\includegraphics[width=0.7\textwidth]{SCHWEBUNG_70cm.pdf}}
-	\caption{\(x(t)\)-Diagramm des Schwebungsfalles bei \(\lh = \qty{70}{\centi\meter}\).}
+	\caption{\(s(t)\)-Diagramm des Schwebungsfalles bei \(\lh = \qty{70}{\centi\meter}\).}
 	\label{fig:schweb}
 \end{figure}
 
+Der Schwebungsfall ensteht ebenfalls, wenn man beide Pendel ungleich auslenkt. Dann lassen sich folgende Schwingungen beobachten.
 \begin{figure}[H]
 	\centering{\includegraphics[width=0.75\textwidth]{ungleicherSchweb.png}}
-	\caption{\(x(t)\)-Diagramm der gegensinnigen Fundamentalschwingung bei \(\lh = \qty{70}{\centi\meter}\).}
+	\caption{\(s(t)\)-Diagramm des Schwebungsfalles bei \(\lh = \qty{70}{\centi\meter}\) und ungleich ausgelenkten Pendeln.}
 	\label{fig:ungl70}
 \end{figure}
 
-Wie aus \autoref{tbl:res70} hervorgeht, liegen \(T_{\text{S}}\) und \(\tilde{T}_{\text{S}}\) sehr nah beieinander. Daran lässt sich sehen, dass die Schwebungsdauer nicht davon abhängt, ob nur ein Pendel oder beide ausgelenkt werden. Bei letztem Schwingungsmode ist zu beachten, dass die Auslenkungen ungleich sein müssen, das sonst wieder Fundamentalschwingungen entstehen würden. Dies liegt daran, dass die Schwebungsdauer nur von den Eigenfrequenzen des Systems abhängt, und diese ändern sich nicht, solange man die Dimensionen des Systems nicht manipuliert bzw. den Kopplungsgrad nicht verändert.
+Wie aus \autoref{tbl:res70} hervorgeht, liegen \(T_{\text{S}}\) und \(T_{\text{S},≠}\) sehr nah beieinander. Daran lässt sich sehen, dass die Schwebungsdauer nicht davon abhängt, ob nur ein Pendel oder beide ausgelenkt werden. Bei letztem Schwingungsmode ist zu beachten, dass die Auslenkungen ungleich sein müssen, das sonst wieder Fundamentalschwingungen entstehen würden. Dies liegt daran, dass die Schwebungsdauer nur von den Eigenfrequenzen des Systems abhängt, und diese ändern sich nicht, solange man die Dimensionen des Systems nicht manipuliert bzw. den Kopplungsgrad nicht verändert.
 
 %\includepdf[pages=-]{SCHWEBUNG_70cm.pdf}
 %\includepdf[pages=-]{gleichsinnige_FUNDAMENTALSCHWINGUNG_70cm.pdf}
@@ -442,97 +447,129 @@ berechnet. Dafür muss zuerst die Lage des Schwerpunktes \(\ls\) mit \autoref{eq
 	\end{split}
 \end{equation*}
 Für \(\ell_{\text{S},2}\) ergibt sich \(\ell_{\text{S},2} = \qty{0,632}{m}\). Die Schwerpunktmasse des ersten Pendels \(M_1\) ist
-\begin{equation}
+\begin{equation*}
 	\begin{split}
 		M_1 &= m_1 + m_{\text{H},1} + m_{\text{St},1}\\
 		&= \qty{176,97e-3}{\kilogram} + \qty{16,06e-3}{\kilogram} + \qty{131,40e-3}{\kilogram}\\
 		&= \qty{324,43e-3}{\kilogram} \,.
 	\end{split}
-\end{equation}
+\end{equation*}
 Für das zweite Pendel ist \(M_2 = \qty{322,02e-3}{\kilogram}\). Damit beläuft sich die theoretische Eigenfrequenz \(\omega_{0,1,\text{theo}}\) auf
-\begin{equation}
+\begin{equation*}
 	\omega_{0,1,\text{theo}} = \sqrt{\frac{M_1 g \ls}{J_1}} = \sqrt{\frac{\qty{324,43e-3}{\kilogram} \cdot \qty{9,81}{\meter\per\second\squared} \cdot \qty{0,635}{\meter}}{\qty{0,150}{\kilogram\meter\squared}}} = \qty{3,671}{\hertz}.
-\end{equation}
+\end{equation*}
 Folgerichtig gilt \(\omega_{0,2,\text{theo}} = \qty{3,673}{\hertz}\).
 
 Aus den gemessenen Größen ergeben sich die gemessenen Eigenfrequenzen
-\begin{equation}
+\begin{equation*}
 	\omega_{0,1,\text{mess}} = \frac{2\pi}{\qty{1,7}{\second}} = \qty{3,7}{\hertz}
-\end{equation}
+\end{equation*}
 und \(\omega_{0,2,\text{mess}} = \qty{3,7}{\hertz}\).
 
+Für \(\lh = \qty{40}{\centi \meter}\) lässt sich der Kopplungsgrad nach \autoref{eq:2} berechnen durch
+\begin{align*}
+	K_1 &= \frac{(\qty{1,7}{\second})^2 - (\qty{1,6}{\second})^2}{(\qty{1,7}{\second})^2 + (\qty{1,6}{\second})^2}\\
+	&= \num{0,0606}
+\end{align*}
+und mittels \autoref{eq:3} durch
+\begin{align*}
+	K_2 &= 4 \cdot \frac{\qty{52,9}{\second} \cdot \qty{1,6}{\second}}{4 \cdot (\qty{52,9}{\second})^2 + (\qty{1,6}{\second})^2}\\
+	&= \num{0,0302}
+\end{align*}
+
+Damit ergeben sich die in \autoref{tbl:kopplungsgrade} dargestellten Kopplungsgrade für die anderen Kopplungsstärken.
+
 \begin{table}[H]
+		\caption{Kopllungsgrade berechnet durch verschiedene Gleichungen. \label{tbl:kopplungsgrade}}
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}@{\hspace{5pt}}lrr@{\hspace{5pt}}}
 		\toprule
-		Länge & \(K\) nach \autoref{eq:2} & \(K\) nach \autoref{eq:3}\\
+		Länge \(\lh\) in \si{\centi\meter} & \(K_1\) nach \autoref{eq:2} & \(K_2\) nach \autoref{eq:3}\\
 		\midrule
-		\(\lh = \qty{40}{\centi\meter}\) & \num{0,0606} & \num{0,0302}\\
-		\(\lh = \qty{55}{\centi\meter}\) & \num{0,0606} & \num{0,0533}\\
-		\(\lh = \qty{70}{\centi\meter}\) & \num{0,0606} & \num{0,0815}\\
+		\num{40} & \num{0,0606} & \num{0,0302}\\
+		\num{55} & \num{0,0606} & \num{0,0533}\\
+		\num{70} & \num{0,0606} & \num{0,0815}\\
 		\bottomrule
 	\end{tabular*}
-	\caption{Kopllungsgrade berechnet durch verschiedene Gleichungen. \label{tbl:kopplungsgrade}}
 \end{table}
+Die Kopplungsgrade verändern sich nur geringfügig. Dabei sollte \autoref{eq:2} die genaueren Ergebnisse liefern, da er mit den direkt gemessenen Periodendauern berechnet werden kann, während bei \autoref{eq:3} mehrere Messungen und Rechnungen für \(T_{\text{II}}\) nötig sind, wodurch größere Unsicherheiten das Ergebnis verfälschen.
 
 \section{Fehlerrechnung}
 
-\begin{align}
-	\text{Messfehler: }\\
-	\Delta m = 0,01 \cdot 10^{-3} \\
-	\Delta T_{\text{geg}}=\Delta T_{\text{gl}}=0,01 \\
-	\Delta T_{\text{s}}=0,3 \\
-	\\
-	\text{Fehlerfortpflanzung Trägheitsmoment: }\\
-	\Delta J=\left| \frac{\partial J}{\partial m} \right| \cdot \Delta m = (\frac{1}{3} L_{\text{St}}^2+l_\text{H}^2+L^2)\cdot \Delta m\\
-	\Delta J=1,1\cdot10^{-5}\\
-	\\
-	\text{Fehlerfortpflanzung Schwerpunktsmasse: }\\
-	\Delta M=\left| \frac{\partial M}{\partial m} \right| \cdot \Delta m = 3\cdot 10^{-5}\\
-	\\
-	\text{Fehlerfortpflanzung Frequenz: }\\
-	\text{Für } \omega_0=\sqrt{\frac{Mgl_{\text{s}}}{J}} \text{ gilt:}\\
-	\Delta \omega_0=\left| \frac{\partial \omega_0}{\partial M} \right| \cdot \Delta M + \left| \frac{\partial \omega_0}{\partial J}\right| \Delta J \\
-	=\frac{1}{2}\left(\sqrt{\frac{gl_{\text{s}}}{MJ}}\cdot \Delta M + \sqrt{\frac{Mgl_{\text{s}}}{J^3}}\cdot \Delta J\right) =12,9 \cdot 10^{-3} \\
-	\\
-	\text{Für } \omega_0=\frac{2\pi}{T}\text{ gilt:}\\
-	\Delta \omega_0=\left|\frac{\partial \omega_0}{\partial T} \right| \Delta T= \frac{2\pi}{T^2}\Delta T = 21,7\cdot 10^{-3}\\
-	\\
-	\text{Fehlerfortpflanzung Kopplungsgrad nach Formel 2.12: }\\
-	\Delta K_1 = \left| \frac{\partial K_1}{\partial T_{\text{gl}}}\right| \cdot \Delta T_{\text{gl}} + \left|\frac{\partial K_1}{\partial T_{\text{geg}}}\right| \cdot T_{\text{geg}}\\
-	\Delta K_1 = 4\cdot \Delta T_{\text{gl}} \frac{T_{\text{gl}}T_{\text{geg}}^2+T_{\text{geg}}T_{\text{gl}}^2}{(T_{\text{gl}}^2+T_{\text{geg}}^2)^2}=12,1\cdot 10^{-3}\\
-\end{align}
-\begin{align}
-		\text{Fehlerfortpflanzung Kopplungsgrad nach Formel 2.13: }\\
-	\Delta  \omega_{II}=\left| \frac{\partial \omega_{II}}{\partial \omega_{\text{geg}}}\right| \cdot \Delta \omega_{\text{geg}}+\left|\frac{\partial\omega_{\text{II}}}{\partial \omega_{\text{gl}}}\right| \cdot \Delta \omega_{\text{gl}}= 0,5\cdot\Delta \omega_{\text{geg}} + 0,5 \cdot \Delta \omega_{\text{gl}}\\
-	\Delta  \omega_{II}=23,1\cdot 10^{-3}\\
-	\\
-	\Delta T_{II}=\left| \frac{\partial T_{II}}{\partial \omega_{II}}\right| \cdot \Delta \omega_{II}=\frac{2\pi}{\omega_{II}^2}\cdot\Delta\omega_{II}=10^{-2}\\
-	\\
-	\Delta K_2 = \left| \frac{\partial K_2}{\partial T_{\text{S}}}\right| \cdot \Delta T_{\text{S}} + \left| \frac{\partial K_2}{\partial T_{\text{II}}}\right| \cdot \Delta T_{\text{II}}\\
-	\\
-	=4\left(\frac{4T_{\text{II}}T_{\text{S}}^2-T_{\text{II}}^2}{(4T_{\text{S}}^2+T_{\text{II}}^2)^2} \Delta T_{\text{S}}+\frac{4T_{\text{S}}^3-T_{\text{S}}T_{\text{II}}^2}{(4T_{\text{S}}^2+T_{\text{II}}^2)^2}\Delta T_{\text{II}}\right)
-\end{align}
+Die Messfehler sind gegeben durch
+\begin{align*}
+	\Delta m &= \qty{0,01e-3}{\kilogram},\\
+	\Delta T_{\text{geg}} = \Delta T_{\text{gl}} &= \qty{0,01}{\second},\\
+	\Delta T_{\text{S}} &= \qty{0,3}{\second}.
+\end{align*}
 
+Fehlerfortpflanzung für das Trägheitsmoment:
+\begin{align*}
+	\Delta J &= \abs{\pdv{J}{m}} \cdot \Delta m = \Le(\frac{1}{3} \cdot L_{\text{St}}^2 + \lh^2 + L^2\Ri) \cdot \Delta m\\
+	&= \qty{1,1e-5}{\kilogram\meter\squared}.
+\end{align*}
 
-\begin{tabular}{|l|l|}
-	\hline
-	& \(\Delta K_2 \)\\
-	\hline
-	\qty{40}{\centi\meter} & \num{0,2e-3}\\
-	\hline
-	\qty{55}{\centi\meter} & \num{0,5e-3}\\
-	\hline
-	\qty{70}{\centi\meter} & \num{1,3e-3} \\
-	\hline
-\end{tabular}
+Fehlerfortpflanzung für die Schwerpunktmasse:
+\begin{equation*}
+	\Delta M = \abs{\pdv{M}{m}} \cdot \Delta m = \qty{3e-5}{\kilogram}.
+\end{equation*}
 
+Fehlerfortpfalnzung für die Frequenz:
 
+Für \(\omega_{0,\text{theo}} = \sqrt{\frac{Mg\ls}{J}}\) gilt:
+\begin{align*}
+	\Delta \omega_0 &= \abs{\pdv{\omega_0}{M}} \cdot \Delta M + \abs{\pdv{\omega_0}{J}} \cdot \Delta J\\
+	&= \frac{1}{2} \Le(\sqrt{\frac{g\ls}{MJ}} \cdot \Delta M + \sqrt{\frac{Mg\ls}{J^3}} \cdot \Delta J\Ri)\\
+	&= \qty{12,9e-3}{\hertz}.
+\end{align*}
+Für \(\omega_{0,\text{mess}} = \frac{2\pi}{T}\) gilt:
+\begin{align*}
+	\Delta \omega_0 &= \abs{\pdv{\omega_0}{T}} \cdot \Delta T = \frac{2\pi}{T^2} \cdot \Delta T\\
+	&= \qty{21,7e-3}{\hertz}.
+\end{align*}
+
+Fehlerfortpflanzung für den Kopplungsgrad nach \autoref{eq:2}:
+\begin{align*}
+	\Delta K_1 &= \abs{\pdv{K_1}{T_{\text{gl}}}} \cdot \Delta T_{\text{gl}} + \abs{\pdv{K_1}{T_{\text{geg}}}} \cdot T_{\text{geg}}\\
+	&= 4 \cdot \Delta \tgl \cdot \frac{\tgl\tgeg^2 + \tgeg\tgl^2}{\Le(\tgl^2 + \tgeg^2\Ri)^2}\\
+	&=\num{12,1e-3}.
+\end{align*}
+
+Fehlerfortpflanzung für den Kopplungsgrad nach \autoref{eq:3}:
+\begin{align*}
+	\Delta \omz &= \abs{\pdv{\omz}{\omgeg}} \cdot \Delta \omgeg + \abs{\pdv{\omz}{\omgl}} \cdot \Delta \omgl = \frac{1}{2} \cdot \Delta \omgeg + \frac{1}{2} \cdot \Delta \omgl\\
+	&= \qty{23,1e-3}{\hertz}.
+\end{align*}
+\begin{align*}
+	\Delta T_{\text{II}} &= \abs{\pdv{T_{\text{II}}}{\omz}} \cdot \Delta \omz = \frac{2\pi}{\omz^2} \cdot \Delta \omz\\
+	&= \qty{e-2}{\second}.
+\end{align*}
+\begin{align*}
+	\Delta K_2 &= \abs{\pdv{K_2}{T_{\text{S}}}} \cdot \Delta T_{\text{S}} + \abs{\pdv{K_2}{T_{\text{II}}}} \cdot \Delta T_{\text{II}}\\
+	&= 4 \cdot \Le(\frac{4 \tz\ts^2 - \tz^2}{\Le(4\ts^2 + \tz^2\Ri)^2} \cdot \Delta \ts + \frac{4\ts^3 - \ts\tz^2}{\Le(4\ts^2 + \tz^2\Ri)^2} \cdot \Delta \tz\Ri).
+\end{align*}
+
+\begin{table}[H]
+		\caption{Fehler des Kopplungsgrads \(K_2\) bei verschiedenen Kopplungen. \label{tbl:FehlerK}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}@{\hspace{5pt}}lr@{\hspace{5pt}}}
+		\toprule
+		Länge \(\lh\) in \si{\centi\meter} & \(\Delta K_2\)\\
+		\midrule
+		\num{40} & \num{0,2e-3}\\
+		\num{55} & \num{0,5e-3}\\
+		\num{70} & \num{1,3e-3}\\
+		\bottomrule
+	\end{tabular*}
+\end{table}
 
 \section{Zusammenfassung}
-Die Kopplungsgrade verändern sich nur geringfügig. Dabei sollte \autoref{eq:2} die genaueren Ergebnisse liefern, da er mit den direkt gemessenen Periodendauern berechnet werden kann, während bei \autoref{eq:3} mehrere Messungen und Rechnungen für \(T_{\text{II}}\) nötig sind, wodurch größere Unsicherheiten das Ergebnis verfälschen.
+
+Die Trägheitsmomente bei der Koppelposition \(\lh = \qty{40}{\centi\meter}\) wurden berechnet zu \(J_1 = \qty{150(0,011)}{\gram\meter\squared}\) für das erste Pendel und \(J_2 = \qty{148(0,011)}{\gram\meter\squared}\). Damit ergaben sich die berechneten Eigenfrequenzen \(\omega_{0,1,\text{theo}} = \qty{3,671(0,0129)}{\hertz}\) und \(\omega_{0,2,\text{theo}} = \qty{3,673(0,0129)}{\hertz}\). Die gemessenen Eigenfrequenzen wurden auf \(\omega_{0,1,\text{mess}} = \omega_{0,2,\text{mess}} = \qty{3,7(0,0217)}{\hertz}\). Somit stimmen die theoretischen und gemessenen Eigenfrequenzen innerhalb der Fehlergrenze überein.
+
+Mit \autoref{eq:2} wurde der Kopplungsgrad bei jeder Kopplungsposition auf \(K = \num{0,0606(0,0121)}\) bestimmt. Mit \autoref{eq:3} wurde der Kopplungsgrad bei \(\lh = \qty{40}{\centi\meter}\) auf \num{0,0302(0,0002)}, bei \(\lh = \qty{55}{\centi\meter}\) auf \num{0,0533(0,0005)} und bei \(\lh = \qty{70}{\centi\meter}\) auf \num{0,0815(0,0013)} bestimmt.
 
 \begin{thebibliography}{999}
-	\bibitem{Quelle} Versuchsanleitung zu \emph{M23 -- Gekoppelte Pendel} (Abgerufen am 25.09.2025)
+	\bibitem{Quelle} Versuchsanleitung zu \emph{M23 -- Gekoppelte Pendel} (Abgerufen am 25.09.2025).
+	Online verfügbar unter: \url{https://www3.physik.uni-stuttgart.de/studium/praktika/ap/pdf_dateien/M23.pdf}
 \end{thebibliography}
 
 %\printbibliography
