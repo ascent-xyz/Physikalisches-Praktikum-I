@@ -55,15 +55,21 @@ In diesem Versuch werden Halbleiterdioden untersucht. Dazu werden die Kennlinien
 
 \section{Grundlagen}
 
-Elektronen können in einem Atom diskrete Energieniveaus einnehmen. Nähern sich Atome einander an werden die Energieniveaus zu mehreren naheliegenden Energieniveaus aufgespalten. Innerhalb eines Einkristalls, mit vielen Wechselwirkenden Atomen, kommt es zu vielen Aufspaltungen, weshalb Naheliegende Energieniveaus zu Bändern zusammengefasst werden. Diese Bänder können von Elektronen besetzt werden, das höchste vollbesetzte Band heißt Valenzband. Das Band, welches energetisch über dem Valenzband liegt, heißt Leitungsband. Ein Kristall ist dann leitend, wenn er ein Teilweise besetztes Band hat, da die Elektronen nur dann ein höheres Energieniveau einnehmen können, um Energie zu übertragen. Als Bandlücke wird der Energiebereich zwischen Valenz- und Leitungsband bezeichnet. Die Energieniveaus innerhalb der Bandlücke können von Elektronen nicht eingenommen werden. Bei Isolatoren ist das Leitungsband unbesetzt und die Bandlücke groß, weshalb keine Elektronen ins Leitungsband kommen. Bei Halbleitern ist die Bandlücke kleiner, wodurch Elektronen unter geringer Energiezufuhr, wie bspw. Wärme oder Licht, ins Leitungsband gelangen können. Alternativ kann die Leitfähigkeit eines Halbleiters auch durch Dotierung verbessert werden. Bei der p-Dotierung werden in den Halbleiterkristall Atome niedriger Wertigkeit eingebracht, diese heißen Akzeptoren. Bei der n-Dotierung werden Atome höherer Wertigkeit eingebracht, sie heißen Donatoren. Dadurch entstehen freie Elektronen, bzw. Elektronenfehlstellen, die Strom leiten können.
-Werden ein p- und ein n-Dotierter Halbleiter zusammengeführt, entsteht ein pn-Übergang. Im pn-Übergang bewegen sich Elektronen und Fehlstellen aufeinander zu und rekombinieren. Dadurch bleiben auf der p-dotierten Seite die negativ geladenen Atomrümpfe der Akzeptoren und auf der n-dotierten Seite die Positiv geladenen Rümpfe der Donatoren übrig. Beide werden nun nicht mehr ausgeglichen, weshalb sich ein elektrisches Feld von n- zu p-Seite bildet. Dieses stoppt weiteres Diffundieren der Elektronen und Fehlstellen, wodurch sich ein Gleichgewicht einstellt. Der mittlere Bereich des pn-Übergangs, in dem das Feld wirkt, heißt Raumladungszone.
-Wird eine Spannung angelegt, mit negativem Pol an der n Seite und positivem an p , kann die Diffusion fortgesetzt werden, dann fließt Strom in Durchlassrichtung, unter ständiger Rekombination, bei der Energie frei wird. Werden die Pole am Halbleiter gewechselt sperrt die Diode und es fließt ausschließlich ein geringer Sperrstrom \(I_{\text{S}}\), welcher nicht durch Rekombination hervorgeht, sondern durch thermisch aktivierte Elektronen. Für  ideale pn-Übergänge von Dioden gilt die  Shockley'sche Beziehung
+Elektronen können in einem Atom diskrete Energieniveaus einnehmen. Nähern sich Atome einander an werden die Energieniveaus zu mehreren naheliegenden Energieniveaus aufgespalten. Innerhalb eines Einkristalls, mit vielen wechselwirkenden Atomen, kommt es zu vielen Aufspaltungen, weshalb naheliegende Energieniveaus zu Bändern zusammengefasst werden. Diese Bänder können von Elektronen besetzt werden. Das höchste vollbesetzte Band heißt Valenzband. Das energetisch über dem Valenzband liegende Band heißt Leitungsband. Ein Kristall ist dann leitend, wenn er ein teilweise besetztes Band hat, da die Elektronen nur dann ein höheres Energieniveau einnehmen können, um Energie zu übertragen.
+
+Als Bandlücke wird der Energiebereich zwischen Valenz- und Leitungsband bezeichnet. Die Energieniveaus innerhalb der Bandlücke können von Elektronen nicht eingenommen werden. Bei Isolatoren ist das Leitungsband unbesetzt und die Bandlücke groß, weshalb keine Elektronen einfach ins Leitungsband gelangen. Bei Halbleitern ist die Bandlücke kleiner, wodurch Elektronen unter moderater Energiezufuhr, wie bspw. Wärme oder Licht, ins Leitungsband gelangen können.
+
+Alternativ kann die Leitfähigkeit eines Halbleiters auch durch Dotierung verbessert werden. Bei der p-Dotierung werden in den Halbleiterkristall Atome niedrigerer Wertigkeit, also mit weniger Valenzelektronen, als die Atome des Halbleiterkristalls hat, eingebracht. Diese Fremdatome heißen Akzeptoren. Bei der n-Dotierung werden Atome höherer Wertigkeit eingebracht und sie heißen Donatoren. Dadurch entstehen freie Elektronen, bzw. Elektronenfehlstellen, die Strom leiten können.
+Werden ein p- und ein n-dotierter Halbleiter zusammengeführt, entsteht ein pn-Übergang. Durch den pn-Übergang bewegen sich Elektronen und Fehlstellen aufeinander zu und rekombinieren. Dadurch bleiben auf der p-dotierten Seite die negativ geladenen Atomrümpfe der Akzeptoren und auf der n-dotierten Seite die positiv geladenen Rümpfe der Donatoren übrig. Dadurch entsteht ein elektrisches Feld, was die Diffusion beider Ladungsträger bremst. Schlussendlich stellt sich ein Gleichgewicht ein, sodass kein Ladungstransport mehr stattfindet. Diesen mittlere Bereich des pn-Übergangs, in dem das Feld wirkt, nennt man Raumladungszone oder Sperrschicht.
+
+Wird eine Spannung angelegt, mit negativem Pol an der n-dotierten Seite und positivem Pol an p-dotierten Seite, wird das elektrische Feld abgebaut und schließlich fließt Strom in Durchlassrichtung, unter ständiger Rekombination, bei der Energie frei wird. Polt man die angelegte Spannung um, sperrt die Diode und es fließt ausschließlich ein geringer Sperrstrom \(I_{\text{S}}\), welcher nicht durch Rekombination hervorgeht, sondern durch thermisch aktivierte Elektronen. Für  ideale pn-Übergänge von Dioden gilt die  Shockley'sche Beziehung
 \begin{equation}
 I=I_{\text{S}} \cdot \mleft[\exp\mleft( \frac{eU}{\kB T}\mright)-1 \mright]\,.
 \end{equation}
 Dabei steht \(e\) für die Elementarladung, \(\kB\) für die Boltzmankonstante, \(U\) für die Spannung und \(T\) für die Temperatur.
-Bei einer sehr hohen Sperrspannung kann es zu einem hohen Sperrstrom, abweichend von der Shockleyschen Beziehung kommen. Der Hintergrund dafür ist einerseits der Zenereffekt, bei dem durch die Sperrspannung das Valenzband des P-dotierten Halbleiters und das Leitungsband des N-dotierten Halbleiters auf das selbe Energieniveau gehoben werden. Dadurch können Elektronen vom Valenz- direkt ins Leitungsband und ein Stromfluss wird möglich. Bei Zenerdioden, handelt es sich um stark dotierte Siliziumdioden, die sich genau diesen Effekt zu nutze machen.
-Andererseits kann es zum Lawineneffekt kommen, bei dem freie, beschleunigte Elektronen andere Elektronen so schnell aus dem Gitter stoßen, dass keine Rekombination stattfinden kann. Diese stoßen wiederum gegen andere Elektronen, was einen schlagartigen Stromanstieg zu folge hat.
+Bei einer sehr hohen Sperrspannung kann es zu einem hohen Sperrstrom, abweichend von der Shockley'schen Beziehung kommen. Der Hintergrund dafür ist einerseits der Zenereffekt, bei dem durch die Sperrspannung das Valenzband des p-dotierten Halbleiters und das Leitungsband des n-dotierten Halbleiters auf dasselbe Energieniveau gehoben werden. Dadurch können Elektronen vom Valenz- direkt ins Leitungsband gelangen und ein Stromfluss wird möglich. Bei Zenerdioden handelt es sich um stark dotierte Siliziumdioden, die sich genau diesen Effekt zunutze machen.
+
+Andererseits kann es zum Lawineneffekt kommen, bei dem freie, beschleunigte Elektronen andere Elektronen so schnell aus dem Gitter stoßen, dass keine Rekombination stattfinden kann. Diese stoßen wiederum gegen andere Elektronen, was einen schlagartigen Stromanstieg zur Folge hat.
 LEDs sind Dioden, bei denen Lichtquanten unter Rekombination entstehen.
 
 Die elektrische Leitfähigkeit \(\sigma\) ist gegeben durch
@@ -75,22 +81,31 @@ Der Widerstand \(R\) ist gegeben als
 \begin{equation}
 	R = \rho \cdot \frac{\ell}{A} \,,
 \end{equation}
-womit sich für die elektrische Leitfähigkeit
+wobei \(\ell\) die Länge des Leiters und \(A\) dessen Querschnitt sind. Daraus folgt für die elektrische Leitfähigkeit
 \begin{equation}\label{eq:Leitfähigkeit}
-	\sigma = \frac{\ell}{RA}
+	\sigma = \frac{\ell}{RA} \,.
 \end{equation}
-ergibt.
 %\begin{figure}[H]
 %	\centering{\includegraphics[width=0.4\textwidth]{Aufbau}}
 %	\caption{Aufbau der Pendel, die hier bei \(\lh = \qty{70}{\centi\meter}\) gekoppelt sind.}
 %	\label{fig:aufbau}
 %\end{figure}
 
+\section[Messprinzip]{Messprinzip mit Abbild und Versuchsablauf}
+
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{E24versuchsaufbau.jpg}}
+	\caption{Versuchsaufbau mit Gleich- und Wechselspannungsquelle, Digitalmultimetern und Oszilloskop \cite{Quelle}.}
+	\label{fig:Aufbau}
+\end{figure}
+
+
+
 \section{Messwerte}
 
 \begin{table}[H]
 	\centering % damit die Tabelle trotzdem mittig steht
-	\caption{Gemessene Spannung und Strom der Germanium-Diode.\label{tbl:GeDiode}}
+	\caption{Gemessene Spannung und Strom der Germanium-Diode in Durchlassrichtung.\label{tbl:GeDiode}}
 	\begin{tabular}{ll}
 		\toprule
 		Spannung in \si{\milli\volt} & Strom in \si{\micro\ampere} \\
@@ -118,7 +133,7 @@ ergibt.
 
 \begin{table}[H]
 	\centering % damit die Tabelle trotzdem mittig steht
-	\caption{Gemessene Spannung und Strom der Silizium-Diode.\label{tbl:SiDiode}}
+	\caption{Gemessene Spannung und Strom der Silizium-Diode in Durchlassrichtung.\label{tbl:SiDiode}}
 	\begin{tabular}{ll}
 		\toprule
 		Spannung in \si{\milli\volt} & Strom in \si{\micro\ampere} \\
@@ -173,7 +188,7 @@ ergibt.
 
 \begin{table}[H]
 	\centering % damit die Tabelle trotzdem mittig steht
-	\caption{Gemessene Spannung und Strom der Silizium-Diode.\label{tbl:SiSperr}}
+	\caption{Gemessene Spannung und Strom der Silizium-Diode in Sperrrichtung.\label{tbl:SiSperr}}
 	\begin{tabular}{ll}
 		\toprule
 		Spannung in \si{\milli\volt} & Strom in \si{\micro\volt} \\
@@ -193,7 +208,7 @@ ergibt.
 
 \begin{table}[H]
 	\centering % damit die Tabelle trotzdem mittig steht
-	\caption{Gemessene Spannung und Strom der Germanium-Diode.\label{tbl:GeSperr}}
+	\caption{Gemessene Spannung und Strom der Germanium-Diode in Sperrrichtung.\label{tbl:GeSperr}}
 	\begin{tabular}{ll}
 		\toprule
 		Spannung in \si{\milli\volt} & Strom in \si{\micro\volt} \\
@@ -214,6 +229,13 @@ ergibt.
 
 \section{Auswertung}
 
+Die Kennlinie für den Durchlassbereich der Silizium- und Germanium-Diode wird mit digitalen Multimetern gemessen. Die aufgenommenen Messpunkte werden dann halblogarithmisch als Durchlasskennlinie aufgetragen. Der graphisch extrapolierte Sperrstrom beträgt für die Silizium-Diode \qty{2,09e-9}{\ampere} und für die Germanium-Diode \qty{3,16e-9}{\ampere}.
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{DurchlasskennlinieSiGe.png}}
+	\caption{Sperrkennlinien der Si- und Ge-Dioden.}
+	\label{fig:Durchlass}
+\end{figure}
+
 Die Leitfähigkeit der kalten Diode beträgt nach \autoref{eq:Leitfähigkeit}
 \begin{equation}
 	\sigma_{\text{k}} = \frac{\ell}{R_{\text{k}}A}
@@ -231,13 +253,13 @@ Somit ist die prozentuale Änderung der Leitfähigkeit \(\Delta \sigma\) für di
 \end{align*}
 Für die Germanium-Diode ergibt sich eine Änderung von \qty{-8}{\percent}.
 
-Bei Messung der der Sperrkennlinien der beiden Dioden wird muss auch der Fehlerstrom \(I_{\text{err}}\) einberechnet werden. Vorher war dieser zu vernachlässigen, da der Innenwiderstand des Voltmeters sehr hoch ist, der der Diode in Durchlassrichtung aber sehr klein. In Sperrrichtung ist der Widerstand der Diode groß, was bedeutet, dass sich der Strom mehr auf die Diode und das Spannungsmessgerät aufteilt. Er berechnet sich folgendermaßen:
+Bei Messung der Sperrkennlinien der beiden Dioden muss auch der Fehlerstrom \(I_{\text{err}}\) einberechnet werden. Vorher war dieser zu vernachlässigen, da der Innenwiderstand des Voltmeters sehr hoch ist, der der Diode in Durchlassrichtung aber sehr klein. In Sperrrichtung ist der Widerstand der Diode groß, was bedeutet, dass sich der Strom mehr auf die Diode und das Spannungsmessgerät aufteilt. Er berechnet sich folgendermaßen:
 \begin{equation*}
 	I_{\text{err}} = \frac{U}{R_{\text{Messgerät}}}
 \end{equation*}
 Hierbei wird angenommen, dass der Widerstand des Amperemeters vernachlässigbar klein ist und somit die Spannung, die vom Voltmeter angezeigt wird, die ist, die über die Diode abfällt.
 
-Der Fehlerstrom muss vom gemessenen Strom des Amperemeters abgezogen werden.
+Der Fehlerstrom muss vom gemessenen Strom des Amperemeters abgezogen werden, wonach die Sperrkennlinien wie sie in \autoref{fig:Sperrkennlinien} zu sehen sind, zustande kommen.
 \begin{figure}[H]
 	\centering{\includegraphics[width=0.9\textwidth]{SperrstromSiGe.png}}
 	\caption{Sperrkennlinien der Si- und Ge-Dioden.}
@@ -268,7 +290,7 @@ Ein Elektron hat die Energie
 \end{equation*}
 Als Näherung kann man annehmen dass diese Energie vollständig als Licht emittiert wird. Die Energie von Licht mit der Wellenlänge \(\lambda\) ist
 \begin{equation*}
-	E_{\L} = \frac{hc}{\lambda}
+	E_{\text{L}} = \frac{hc}{\lambda}
 \end{equation*}
 mit dem Planck'schen Wirkungsquantum \(h\) und der Lichtgeschwindigkeit \(c\).
 Dann lautet die Relation zwischen angelegter Spannung und Wellenlänge
@@ -276,12 +298,92 @@ Dann lautet die Relation zwischen angelegter Spannung und Wellenlänge
 	U = \frac{hc}{e\lambda}
 \end{equation*}
 %\section{Fehlerrechnung}
-Für eine rote Diode mit einer Schwellspannung von ca. \qty{1,7}{\volt} ergibt sich somit eine Wellenlänge von
+Für rotes Licht wird eine Wellenlänge von \(\lambda_{\text{R}} = \qty{700}{\nano\meter}\) angenommen, was zu einer Schwellenspannung von
+\begin{align*}
+	U &= \frac{hc}{e\lambda_{\text{R}}} = \frac{\qty{6,62607015e-34}{\joule\second} \cdot \qty{299792458}{\meter\per\second}}{\qty{1,602176634e-19}{\coulomb} \cdot \qty{700e-9}{\meter}}\\
+	&\approx \qty{1,77}{\volt}
+\end{align*}
+führt.
+%Diese befindet sich am oberen Ende des sichtbaren elektromagnetischen Spektrums und entspricht folgerichtig rotem Licht. Für die blaue Diode ergibt sich mit \(U_{\text{Schwelle}} = \qty{2,3}{\volt}\) eine Wellenlänge von \(\lambda \approx \qty{539}{\nano\meter}\), was deutlich niedriger ist und sich im Bereich von blauem und grünem Licht befindet. Damit sind die Korrelationen zwischen Schwellenspannung und Wellenläge der LED bestätigt.
+Für blaues Licht wird eine Wellenlänge von \(\lambda_{\text{B}} = \qty{450}{\nano\meter}\) angenommen woraus sich eine Schwellenspannung von \(U \approx \qty{2,76}{\volt}\) ergibt.
+
+Bei der roten LED wird eine Schwellspannung von \qty{1,54}{\volt} und bei der Blauen \qty{2,3}{\volt} gemessen. Für diese einfachste Näherung lässt sich unter den berechneten und experimentell bestimmten Werten eine qualitative Übereinstimmung schließen.
+
+Die abgegebenen Leistung \(P_4\) in den Widerstand \(R_4\), sowie die die Eingangsleistung \(P_2\) werden durch die Effektivwerte der Spannung und des Stromes bestimmt. Dafür gilt
 \begin{equation*}
-	\lambda = \frac{hc}{eU} = \frac{bumms einsetzen}{\cdot \qty{1,7}{\volt}}
+	P_{\text{eff}} = U_{\text{eff}} \cdot I_{\text{eff}} = \frac{\hat{U}}{\sqrt{2}} \cdot \frac{\hat{I}}{\sqrt{2}} = \frac{1}{2} \cdot \hat{U} \cdot \hat{I} \,,
 \end{equation*}
+wobei \(\hat{U}\) und \(\hat{I}\) der Scheitelwert der Wechselspannung bzw. des Wechselstromes sind.
+Für die Eingangsleistung mit der Silizium-Diode ergibt sich zum Beispiel
+\begin{equation*}
+	P_2 = \frac{(\qty{8,33}{\volt})^2}{2 \cdot \qty{1}{\kilo\ohm}} = \qty{34,69}{\milli\watt} \,.
+\end{equation*}
+In \autoref{tbl:POWER} sind alle Eingangsleistungen, sowie die Leistungen über \(R_4\) dargestellt.
+\begin{table}[H]
+	\caption{Eingangsleistungen und Leistungen über Widerstand \(R_4\) \label{tbl:POWER}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}@{\hspace{5pt}}lrr@{\hspace{5pt}}}
+		\toprule
+		Diode & \(P_2\) in \si{\milli\watt} & \(P_4\) in \si{\milli\watt} \\
+		\midrule
+		Silizium & \num{34,69} & \num{29,18} \\
+		Germanium & \num{34,44} & \num{30,81} \\
+		LED (Blau) & \num{34,36} & \num{15,96} \\
+		LED (Rot) & \num{34,36} & \num{21,51} \\
+		\bottomrule
+	\end{tabular*}
+\end{table}
+
+Die mittlere Spannung \(\hat{U}\) über eine Halbwelle kann durch das Integral
+\begin{equation*}
+	\hat{U} = \frac{1}{t_2 - t_1} \cdot \int\limits_{t_1}^{t_2} U(t) \d t
+\end{equation*}
+bestimmt werden. Dies wurde numerisch in Python durchgeführt, da das Oszilloskop keine stetige Funktion liefert, sondern Daten in Form von Datenpunkten.
+Die Ergebnisse sind in \autoref{tbl:middleU} tabelliert.
+\begin{table}[H]
+	\caption{Eingangsleistungen und Leistungen über Widerstand \(R_4\) \label{tbl:middleU}}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}@{\hspace{5pt}}lrr@{\hspace{5pt}}}
+		\toprule
+		Diode & \(\hat{U}_4\) in \si{\volt} & \(\hat{U}_2\) in \si{\volt} \\
+		\midrule
+		Silizium & \num{5,00} & \num{5,50} \\
+		Germanium & \num{5,24} & \num{5,55} \\
+		LED (Blau) & \num{3,15} & \num{5,58} \\
+		LED (Rot) & \num{3,91} & \num{5,56} \\
+		\bottomrule
+	\end{tabular*}
+\end{table}
+
+Die Eingangsleistungen, sowie die abfallenden Leistungen können zudem in Diagrammen sichtbar gemacht werden:
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{Leistungen_SiDiode.png}}
+	\caption{Eingangsleistung, sowie abfallende Leistung über die Silizium-Diode.}
+	\label{fig:PSi}
+\end{figure}
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{Leistungen_GeDiode.png}}
+	\caption{Eingangsleistung, sowie abfallende Leistung über die Germanium-Diode.}
+	\label{fig:PGe}
+\end{figure}
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{Leistungen_blaueLED.png}}
+	\caption{Eingangsleistung, sowie abfallende Leistung über die blaue LED.}
+	\label{fig:PBl}
+\end{figure}
+\begin{figure}[H]
+	\centering{\includegraphics[width=0.9\textwidth]{Leistungen_roteLED.png}}
+	\caption{Eingangsleistung, sowie abfallende Leistung über die rote LED.}
+	\label{fig:PRo}
+\end{figure}
+
+Dabei fällt auf, dass die abfallenden Leistungen bei den LEDs deutlich niedriger sind, als bei den anderen beiden Dioden. Es ist zu beachten, dass die aufgetragenen abgefallenen Leistungen am Widerstand \(R_4\) gemessen wurden, weshalb der Rückschluss sein muss, dass an den beiden LEDs mehr Leistung als an den anderen beiden Dioden abfällt. Dies ist darauf zurückzuführen, dass die LEDs Leistung in Form von Licht abstrahlen.
 
 \section{Zusammenfassung}
+
+Zuerst wurden die Kennlinien von einer Silizium- und einer Germanium-Diode gemessen. Anschließend wurde die Änderung der Leitfähigkeit nach erwärmen auf Körpertemperatur untersucht und die prozentualen Änderungen konnte auf \qty{-4}{\percent} für die Silizium-Diode und \qty{-8}{\percent} für die Germanium-Diode quantifiziert werden.
+
+Es wurden die Sperrkennlinien der Silizium- und Germanium-Diode, sowie die Kennlinie einer Z-Diode und einer roten und einer blauen LED aufgezeichnet. Die unterschiedlichen Schwellspannungen der LEDs wurden aufgrund ihrer Wellenlägen berechnet und konnten die experimentell bestimmten Werte stützen.
+
+Schließlich wurden die abgefallenen Leistungen für alle Dioden graphisch dargestellt und verglichen.
 
 \begin{thebibliography}{999}
 	\bibitem{Quelle} Versuchsanleitung zu \emph{E24 -- Halbleiterdioden} (Abgerufen am 29.09.2025).
@@ -291,6 +393,6 @@ Für eine rote Diode mit einer Schwellspannung von ca. \qty{1,7}{\volt} ergibt s
 %\printbibliography
 \section{Anhang}
 
-%\includepdf[pages=-]{Messprotokoll.pdf}
+\includepdf[pages=-]{MessprotDioden.pdf}
 
 \end{document}
