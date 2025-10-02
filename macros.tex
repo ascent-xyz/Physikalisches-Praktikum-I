@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GENERAL
+
+\newcommand{\e}{\mathrm{e}} % Der hier von \eul redefined
+\newcommand{\imag}{\mathrm{i}}
+%\newcommand{\dif}[1]{\mathrm{d}#1} not needed (fixdif package)
+\newcommand{\Le}{\mleft}
+\newcommand{\Ri}{\mright}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ensp}{\enspace}
+\newcommand{\sbst}{\subset}
+\newcommand{\id}{\mathbb{1}}
+\renewcommand{\implies}{\Rightarrow}
+\newcommand{\openint}[2]{{]{#1,#2}[}}
+\newcommand{\diag}[1]{\mathrm{diag}\Le\{#1\Ri\}}
+\DeclarePairedDelimiterXPP\Exp[1]{\operatorname{exp}}{(}{)}{}{#1} %exp Operator mit passendem Klammern Spacing oder so
+\newcommand{\bv}[1]{\symbfit{#1}} % bolt vector
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SYMBOLS
+
+\newcommand{\veps}{\varepsilon}
+\newcommand{\vphi}{\varphi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TOPOLGY
+
+\DeclareMathOperator{\accumulated}{acc}
+\DeclareMathOperator{\isolated}{iso}
+\DeclareMathOperator{\interior}{int}
+\DeclareMathOperator{\exterior}{ext}
+\newcommand{\edge}{\partial}
+\DeclareMathOperator{\CauchySeq}{\text{CF}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LINEAR ALGEBRA
+
+\DeclareMathOperator{\trace}{Tr}
+\DeclareMathOperator*{\Vektor}{\scalerel*{V}{\sum}}
+\DeclareMathOperator{\core}{ker}
+%\DeclareMathOperator{\span}{span}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VECTOR CALCULUS
+
+\newcommand{\nbl}{\symbfup{\nabla}}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\divgc}{div}
+\DeclareMathOperator{\rot}{rot}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PHYSICS
+\newcommand{\poiss}[2]{\Le\{#1,#2\Ri\}} % Poissant brackets
+
+%\prime
+%\dprime
+%\trprime

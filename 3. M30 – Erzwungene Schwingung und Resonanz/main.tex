@@ -1,0 +1,95 @@
+\documentclass[
+12pt,
+a4paper,
+bibliography=totocnumbered, %Literaturverzereichnis als Eintrag ins Inhaltsverzeichnis
+%twoside, %Zweiseitiger Druck
+BCOR=1cm, %Platz zum Lochen
+oneside, %Einseitiger Druck
+]{scrartcl}
+
+\input{preamble.tex}
+\input{../macros.tex}
+
+% Hier können die individuellen Anpassungen vorgenommen werden, die sich auf das Titelblatt und die Kopfzeilen auswirken.
+
+\newcommand{\VERSUCHSDATUM}{01.10.2025}
+\newcommand{\PROTOKOLLDATUM}{\today}
+
+\newcommand{\VerfasserEINS}{Julian Molt}
+\newcommand{\MatNoEINS}{3803097}
+\newcommand{\StudiengangEINS}{Physik}
+
+\newcommand{\VerfasserZWEI}{Valentin Stopper}
+\newcommand{\MatNoZWEI}{3774391}
+\newcommand{\StudiengangZWEI}{Physik}
+
+\newcommand{\BETREUER}{Simon Krinke}
+\newcommand{\GRUPPENNR}{A-016}
+
+\newcommand{\VERSUCHSNR}{M30}
+\newcommand{\VERSUCHSNAME}{Erzwungene Schwingung und Resonanz}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\input{titlepage}
+
+\thispagestyle{empty}
+
+\tableofcontents
+
+\clearpage %Neue Seite, davor werden alle noch ausstehenden Grafiken/Tabellen platziert.
+
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+
+% Die erste eckige Klammer ist optional, die darin angegebene Bezeichnung steht im Inhaltsverzeichnis anstelle des hinteren (längeren) Namens.
+\section[Versuchsziel]{Versuchsziel und Versuchsmethode}
+
+\section{Grundlagen}
+
+\begin{equation}
+	\Psi(t) = \alpha \e^{\imag \omega_0 t} + \beta \e^{- \imag \omega_0 t}
+\end{equation}
+
+\section[Messprinzip]{Messprinzip mit Abbild und Versuchsablauf}
+
+%\begin{figure}[H]
+%	\centering{\includegraphics[width=0.9\textwidth]{X.jpg}}
+%	\caption{X.}
+%	\label{fig:X}
+%\end{figure}
+
+\section{Messwerte}
+
+%\begin{table}[H]
+%	\centering
+%	\caption{X. \label{tbl:X}}
+%	\begin{tabular}{ll}
+%		\toprule
+%		X & X \\
+%		\midrule
+%		X  & X  \\
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+
+\section{Auswertung}
+
+\section{Zusammenfassung}
+
+
+%\begin{thebibliography}{999}
+%	\bibitem{Quelle} Versuchsanleitung zu \emph{E24 -- Halbleiterdioden} (Abgerufen am 29.09.2025).
+%	Online verfügbar unter: \url{https://www3.physik.uni-stuttgart.de/studium/praktika/ap/pdf_dateien/E24.pdf}
+%\end{thebibliography}
+
+\printbibliography
+
+\section{Anhang}
+
+%\includepdf[pages=-]{MessprotDioden.pdf}
+
+\end{document}

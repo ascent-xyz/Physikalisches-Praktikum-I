@@ -1,1 +1,0 @@
-# Physikalisches-Praktikum-I
