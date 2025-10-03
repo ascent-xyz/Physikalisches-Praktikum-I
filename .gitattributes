@@ -1,0 +1,11 @@
+# Tex-Dateien: immer LF (im Repo und beim Checkout)
+*.tex    text eol=lf
+
+# Bilder / PDFs: als Binärdateien behandeln (keine EOL-Konversion)
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.pdf    binary
+*.eps    binary
+*.svg    binary
