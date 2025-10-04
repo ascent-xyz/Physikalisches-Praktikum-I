@@ -48,13 +48,65 @@ oneside, %Einseitiger Druck
 % Die erste eckige Klammer ist optional, die darin angegebene Bezeichnung steht im Inhaltsverzeichnis anstelle des hinteren (längeren) Namens.
 \section[Versuchsziel]{Versuchsziel und Versuchsmethode}
 
+Im Versuch wurde die Bewegung eines Drehpendels bei unterschiedlichen Anregungsfrequenzen und Dämpfungen betrachtet. Dazu wurden die Kreisfrequenzen \(\omega_0\) bei verschiedenen Auslenkungen bestimmt. Außerdem wurden das logarithmische Dekrement und die Abklingkonstante \(\delta\) für die gedämpften Schwingungen bestimmt. Zuletzt wurde die Resonanzkurve für die Auslenkung \(\Psi\) der angeregten Schwingungen ermittelt.
+
 \section{Grundlagen}
 
+Beim Auslenken eines Systems aus dem Zustand mit der geringsten potentiellen Energie entstehen rückwirkende Kräfte, durch die eine Schwingung entsteht. Bei Drehpendeln treten die rückwirkenden Kräfte in Form von Drehmomenten auf. Ohne Dämpfung und Anregung erzeugt nur die Spiralfeder mit der Federkonstante $D$ ein Drehmoment, wodurch sich die Differentialgleichung zur Beschreibung des Auslenkwinkels \(\Psi(t)\) mit dem Trägheitsmoment \(J\) ergibt:
 \begin{equation}
-	\Psi(t) = \alpha \e^{\imag \omega_0 t} + \beta \e^{- \imag \omega_0 t}
+	J \cdot \odv[2]{\Psi(t)}{t} = 0 \,.
+\end{equation}
+Die Formel \(\Psi(t) = \alpha \e^{\imag \omega_0 t} + \beta \e^{- \imag \omega_0 t}\) ist die Lösung dieser Differentialgleichung, wobei sich \(\alpha\) und \(\beta\) aus den Anfangsbedingungen ergeben. \(\omega_0\) ist die Eigenfrequenz des System und kann mit
+\begin{equation}
+	\omega_0 = \sqrt{\frac{D}{J}}
+\end{equation}
+berechnet werden. Da das rückstellende Drehmoment hier proportional zur Auslenkung ist, handelt es sich um eine harmonische Schwingung.
+
+Bei der gedämpften Schwingung kommt noch ein der Bewegung entgegenwirkendes Drehmoment hinzu. Dieses wirkt nicht proportional zur Auslenkung und sorgt dafür, dass die Amplitude abnimmt. Die Differentialgleichung der gedämpften Schwingung lautet dann
+\begin{equation}
+	J \cdot \odv[2]{\Psi(t)}{t} + B \cdot \odv{\Psi(t)}{t} + D \cdot \Psi(t) = 0 \,,
+\end{equation}
+mit der allgemeinen Lösung
+\begin{equation}
+	\Psi(t) = \e^{\frac{-B}{2J} \cdot t} \cdot \Le[\alpha \e^{\sqrt{\frac{B^2}{4J^2} - \frac{D}{J}}\cdot t} + \beta \e^{-\sqrt{\frac{B^2}{4J^2} - \frac{D}{J}}\cdot t}\Ri] \,.
+\end{equation}
+Die reelle Eigenfrequenz des Systems ist
+\begin{equation}
+	\omega_1=\frac{2 \pi}{T_1}=\sqrt{\frac{D}{J}-\frac{B^2}{4J^2}} \,.
+\end{equation}
+Zur Beschreibung der Dämpfungsstärke wird die Abklingkonstante $\delta$ verwendet. Die Bestimmung dieser kann durch das Verhältnis zweier aufeinanderfolgender Maxima geschehen
+\begin{equation}
+	\frac{\Psi_n}{\Psi_{n+1}}=e^{\delta T_1} \,.
+\end{equation}
+Das logarithmische Dekrement \(\Lambda\) ergibt sich, durch die Anwendung des natürlichen Logarithmus
+\begin{equation}
+	\ln\Le(\frac{\Psi_n}{\Psi_{n+1}}\Ri) = \delta T_1
 \end{equation}
 
+Kommt nun eine Anregung, in Form einer externen periodischen Kraft auf das System, hinzu, ergibt sich eine inhomogene Differentialgleichung
+\begin{equation}
+	J \cdot \odv[2]{\Psi}{t} + B \cdot \odv{\Psi(t)}{t} + D\Psi(t)=M_0\cos(\omega t) \,,
+\end{equation}
+mit dem äußeren Drehmoment \(M = M_0 \cos(\omega t)\) als Störterm. Die partikuläre Lösung ist, mit Hilfe der Beziehung \(\omega^2_0 = \frac{D}{J}\)
+\begin{equation}
+	\Psi(t) = \frac{M_0}{\sqrt{J^2(\omega^2_0 - \omega^2)^2 + B^2\omega^2}}\cos(\omega t - \phi) \,.
+\end{equation}
+Die Phasenverschiebung \(\phi\) kann durch
+\begin{equation}
+	\tan\phi=\frac{B\omega}{J\Le(\omega^2_0 - \omega^2\Ri)}
+\end{equation}
+bestimmt werden.
+
 \section[Messprinzip]{Messprinzip mit Abbild und Versuchsablauf}
+
+Abbildung 1 skizziert den Versuchsaufbau. Am schwingenden System (3) wird durch die Spiralfeder (4) ein rückstellendes Drehmoment verursacht. Die Auslenkung aus der Ruhelage und die Amplitude der Schwingung, können über den Zeiger (6) und die Skala (2) bestimmt werden. Gedämpft wird die Schwingung durch den Elektromagnet (1). Die Stromstärke am Elektromagnet, wird über das Multimeter abgelesen (in Abbildung 2 rechts), um die Stärke der Dämpfung abzuschätzen. In Abbildung 2 ist rechts neben dem Schwingungssystem eine kleine Box, diese enthält den Motor zur Erzeugung der externen periodischen Kraft. Diese wird durch das Antriebsrat (11) und die Schubstange (12) zum Drehpendel übertragen. Die äußere Frequenz der Anregenden Kraft kann über die Drehzahlregler (7) eingestellte werden. Zentriert vor dem Drehpendel befindet sich eine Kamera, zur Aufzeichnung der Schwingung.
+
+Die Eigenfrequenz des ungedämpften Systems wurde bestimmt indem, bei ausgeschaltetem Elektromagneten, das Pendel um weniger als 90° ausgelenkt und die Schwingungsdauer über 10 Perioden gestoppt wurde. Das wurde für 5 verschiedene Auslenkungen wiederholt.
+Für die Gedämpfte Schwingung wurde dieses Vorgehen wiederholt, allerdings erst mit 0,2 Ampere und dann mit 0,4 Ampere am Elektromagneten, sowie jeweils fünf Auslenkungen über \qty{90}{\degree}.
+
+Für die Bestimmung der Abklingkonstante und des logarithmischen Dekrements wird die Schwingung bei beiden Dämpfungen mit der Kamera aufgezeichnet und mit dem Programm VianaNET ausgewertet. Im Programm wird zunächst die Video Aufnahme gestartet und anschließend die Analyse geöffnet. Dort wird Skalierung und ein Koordinatenursprung gewählt. Anschließend wird für das Bewegungstracking die Farbe des Zeigers makiert. Zuletzt wird die Automatische Analyse gestartet, welche als Ergebnis eine Tabelle und zugehörige Diagramme mit den Bewegungsdaten des Pendels ausgibt. Dadurch ist die Auslenkung über die Zeit und somit das logarithmische Dekrement des Drehpendels bekannt.
+
+Der letzte Versuchsteil ist die Bestimmung der Resonanzkurve. Hier werden für die beiden Dämpfungen jeweils 5 Schwingungen mit Frequenzen über und unter der Eigenfrequenz des Systems, angeregt. Dabei muss bei jeder Frequenz gewartet werden, bis das Pendel eingeschwungen ist. Das bedeutet in der Praxis, dass sich die Amplitude nur noch minimal ändert. Dann kann die Amplitude über die Skala abgelesen und notiert werden.
 
 %\begin{figure}[H]
 %	\centering{\includegraphics[width=0.9\textwidth]{X.jpg}}
@@ -64,19 +116,79 @@ oneside, %Einseitiger Druck
 
 \section{Messwerte}
 
-%\begin{table}[H]
-%	\centering
-%	\caption{X. \label{tbl:X}}
-%	\begin{tabular}{ll}
-%		\toprule
-%		X & X \\
-%		\midrule
-%		X  & X  \\
-%		\bottomrule
-%	\end{tabular}
-%\end{table}
+\begin{table}[H]
+	\centering
+	\caption{Gemessene Periodendauern \(\Delta T^{10}\) der ungedämpften Schwingung. \label{tbl:ungedämpft}}
+	\begin{tabular}{lr}
+		\toprule
+		Auslenkung in Skalenteilen & \(\Delta T^{10}\) in \si{\second}\\
+		\midrule
+		11 & \num{19,03}\\
+		10 & \num{19,22}\\
+		7  & \num{18,87}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Gemessene Periodendauern \(\Delta T^{10}\) der mit \(I = \qty{0,4}{\ampere}\) gedämpften Schwingung. \label{tbl:gedämpft400mA}}
+	\begin{tabular}{lr}
+		\toprule
+		Auslenkung in Skalenteilen & \(\Delta T^{10}\) in \si{\second}\\
+		\midrule
+		19 & \num{19,06}\\
+		17 & \num{19,09}\\
+		15 & \num{18,97}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Gemessene Periodendauern \(\Delta T^{10}\) der mit \(I = \qty{0,2}{\ampere}\) gedämpften Schwingung. \label{tbl:gedämpft200mA}}
+	\begin{tabular}{lr}
+		\toprule
+		Auslenkung in Skalenteilen & \(\Delta T^{10}\) in \si{\second}\\
+		\midrule
+		19 & \num{18,87}\\
+		17 & \num{18,97}\\
+		15 & \num{19,03}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Amplituden \(\Psi\) der mit \(I = \qty{0,4}{\ampere}\) gedämpften Schwingung, sowie unter Erregerfrequenz \(f\). \label{tbl:MAXgedämpft400mA}}
+	\begin{tabular}{lr}
+		\toprule
+		\(f\) in \si{\hertz} & \(\Psi\) in Skalenteilen\\
+		\midrule
+		\num{0,41} & \num{1,4}\\
+		\num{0,43} & \num{1,6}\\
+		\num{0,45} & \num{1,9}\\
+		\num{0,51} & \num{4,1}\\
+		\num{0,52} & \num{5,1}\\
+		\num{0,55} & \num{4,5}\\
+		\num{0,58} & \num{2,3}\\
+		\bottomrule
+	\end{tabular}
+\end{table}
 
 \section{Auswertung}
+
+Die Eigenfrequenz \(\omega_0\) kann einfach bestimmt werden durch
+\begin{equation*}
+	\omega_0 = \frac{2\pi}{\overbar{T}} \,,
+\end{equation*}
+wobei \(\overbar{T}\) die mittlere Periodendauer \(\overbar{T} = \frac{1}{n} \sum_{i=1}^{n} \frac{\Delta T^{10}_i}{10}\) ist. Hierbei gilt \(n = 3\), weshalb sich die Eigenfrequenz auf
+\begin{align*}
+	\omega_0 &= \frac{60 \pi}{\Delta T_1^{10} + T_2^{10} + T_3^{10}}\\
+			 &= \frac{60\pi}{\Le(\num{19,03} + \num{19,22} + \num{18,87}\Ri)\si{\second}} = \qty{3,30}{\per\second}\,.
+\end{align*}
+
+Analog folgen für die Dämpfung mit \(I = \qty{0,4}{\ampere}\) \(\omega_{0,\text{stark}} = \qty{3,30}{\per\second}\) und für die Dämpfung mit \(I =\qty{0,2}{\ampere}\)\(\omega_{0,\text{schwach}} = \qty{3,31}{\per\second}\)
 
 \section{Zusammenfassung}
 

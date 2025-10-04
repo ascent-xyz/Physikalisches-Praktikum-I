@@ -1,7 +1,6 @@
 \usepackage{geometry}
 
-\usepackage[default]{fontsetup}
-%\usepackage[onehalfspacing]{setspace}
+
 
 \usepackage[ngerman]{babel}
 \usepackage[babel=true,german=quotes]{csquotes}
@@ -19,10 +18,8 @@
 \usepackage{physics2}
 \usephysicsmodule{ab.legacy}
 
-\usepackage{unicode-math}
-\setmathfont{NewCMMath-Book}
-\setmathfont{NewCMMath-Book}[range=cal, StylisticSet=1]
-\setmathfont{NewCMMath-Book}[range=scr]
+\PassOptionsToPackage{math-style=ISO}{unicode-math}
+\usepackage[default]{fontsetup}
 
 \usepackage{siunitx}
 \sisetup{detect-weight=true, detect-family=true,locale=DE,range-phrase={\,bis\,},list-final-separator ={\,\linebreak[0] \text{und}\,},separate-uncertainty=true,per-mode = symbol-or-fraction}
